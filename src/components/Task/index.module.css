@@ -1,0 +1,44 @@
+:root {
+    --purple-500: #310055;
+    --purple-400: #5a108f;
+    --purple-300: #6818a5;
+    --purple-200: #bd68ee;
+    --black-300: #555555;
+    --black-400: #212529;
+    --white-200: #cacaca;
+    --white-500: #ffffff;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--purple-300);
+    padding: 15px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.task p {
+    max-width: 95%;
+    overflow: hidden;
+}
+
+.taskButton {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: var(--purple-500);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.taskButton:hover {
+    color: var(--purple-200);
+}
+
+.completed {
+    text-decoration: line-through 2px var(--purple-200);
+    color: var(--white-200);
+}

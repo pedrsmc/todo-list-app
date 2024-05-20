@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --purple-500: #310055;
+    --purple-400: #5a108f;
+    --purple-300: #6818a5;
+    --purple-200: #bd68ee;
+    --black-300: #555555;
+    --black-400: #212529;
+    --white-200: #cacaca;
+    --white-500: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: #212529;
+    color: var(--white-500);
+}
+
+main {
+    max-width: 700px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputDiv {
+    width: 35rem;
+    display: flex;
+    gap: 10px;
+}
+
+.inputField {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: var(--black-300);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--white-500)
+}
+
+.buttons {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background: var(--purple-300);
+    color: var(--white-500);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttons:hover {
+    transition: 0.3s ease-in-out;
+    background: var(--purple-400);
+}
